@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Luxurious+Roman&display=swap');
+      </style>
+    <link rel="stylesheet" href="Style/style-login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="images/Register.png">
+</head>
+
+<body>
+  <div class="logo">
+      <a href="index.html" class="logo-icon"><img src="images/logo.png" alt="logo"></a>
+      <a href="index.html" class="logo-text">ablerrr</a>
+    </div>
+
+    <div class="wrapper">
+
+        <form action="">
+            <h1>Registration</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required>
+
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="tos">
+                <label><input type="checkbox" class="checkbox" required> I agree to the <a href="tos.html"> terms of service</a> </label>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+
+            <div class="register-link">
+                <p> Already have an account? <a href="Login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

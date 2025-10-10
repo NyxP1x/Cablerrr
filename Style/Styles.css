@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Luxurious+Roman&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,51 +7,56 @@
   font-family: Luxurious Roman;
 }
 
-
 body {
-  background: rgb(0, 0, 0) ;
+  background: rgb(0, 0, 0);
   padding: 20px;
-
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
+.color2{
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
 
 .circle1 {
   position: absolute;
-  top: 675px;
+  bottom: 91px;
   left: 20px;
-
 }
 .circle2 {
   position: absolute;
-  top: 100px;
-  left: 995px
+  top: 0%;
+  right: 0%;
 }
 .circle3 {
   position: absolute;
   top: 100px;
   left: 20px;
-
 }
 
 .circle4 {
   position: absolute;
-  top: 270px;
-  left: 1470px;
-
+  bottom: 0;
+  right: 0%;
 }
 
 .box {
-  height: 800px;
+  min-height: 80vh;
   width: 100%;
   border-radius: 100px;
-  background-image: linear-gradient(120deg, #E2DE80, #FFB5D9 );
+  background-image: linear-gradient(120deg, #e2de80, #ffb5d9);
   margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar {
   margin-top: 10px;
   width: 100%;
-  background: #000;
+  background: transparent;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -63,7 +70,7 @@ body {
 
 .logo {
   position: relative;
- left: 50px;
+  left: 50px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -76,7 +83,7 @@ body {
   font-weight: bold;
 }
 
-.logo-text{
+.logo-text {
   font-size: 30px;
   margin-bottom: 5px;
 }
@@ -118,7 +125,7 @@ body {
   font-size: 20px;
 }
 
-.btn-Login{
+.btn-Login {
   position: relative;
   right: 80px;
   background: rgb(255, 255, 255);
@@ -132,15 +139,13 @@ body {
   margin-right: 40px;
 }
 
-
 .hero-content {
-  position: absolute; 
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   text-align: center;
   color: #000;
-  font-family: "Poppins", sans-serif;
 }
 
 .hero-content h1 {
@@ -175,7 +180,6 @@ body {
   color: #fff;
 }
 
-
 .btn-outline {
   background-color: transparent;
   border: 2px solid #000;
@@ -201,6 +205,8 @@ body {
 
 .mobile-menu {
   display: none;
+  width: 50%;
+  height: 1000px;
   flex-direction: column;
   align-items: center;
   color: #fff;
@@ -212,18 +218,18 @@ body {
   position: absolute;
   left: 230px;
   top: 55px;
-   transform: translateY(20px);
-  animation: fadeInUp 0.8s ease forwards;
+  transform: translateX(50px);
+  animation: fadeInRight 0.8s ease forwards;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(20px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-@keyframes fadeInUp {
+@keyframes fadeInRight {
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -239,63 +245,62 @@ body {
   display: block;
 }
 
-@media (max-width: 768px) {
-  .logo{
+@media (max-width: 48rem) {
+  .logo {
     position: absolute;
-     top: 15px;
-    left: -0px;
+    top: 1vh;
+    left: 0;
   }
   .nav-links,
   .nav-buttons {
     display: none;
   }
 
-  
   .hamburger {
     position: absolute;
-    top: 25px;
-    left: 350px;
+    top: 2.7vh;
+    right: 5vw;
     display: flex;
   }
 
-.hamburger span {
-  transition: all 0.35s ease;
-}
+  .hamburger span {
+    transition: all 0.35s ease;
+  }
 
-.hamburger.active span:nth-child(1) {
-  transform: translateY(6px);
-  opacity: 0.8;
-}
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(0.375rem);
+    opacity: 0.8;
+  }
 
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
 
-.hamburger.active span:nth-child(3) {
-  transform: translateY(-6px);
-  opacity: 0.8;
-}
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-0.375rem);
+    opacity: 0.8;
+  }
 
-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: url(images/background-phone.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-.circle1,
-.circle2,
-.circle3,
-.circle4{
-  display: none;
-}
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/background-phone.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+  }
+  .color2,
+  .circle1,
+  .circle2,
+  .circle3,
+  .circle4 {
+    display: none;
+  }
 
-.box{
-  display: none;
-}
-
+  .box {
+    display: none;
+  }
 }

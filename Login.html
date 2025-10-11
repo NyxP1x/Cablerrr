@@ -38,10 +38,11 @@
       </div>
 
       <!-- Password Input -->
-      <div class="input-box">
-        <input type="password" placeholder="Password" required>
-        <i class='bx bxs-lock-alt' style='color:#ffffff'></i>
-      </div>
+<div class="input-box">
+  <input type="password" placeholder="Password" id="password" required>
+  <i class='bx bxs-lock-alt' style='color:#ffffff'></i>
+  <img src="images/eye-close.png" id="eyeicon" alt="Toggle password visibility" style="cursor: pointer;">
+</div>
 
       <!-- Remember Me and Forgot Password -->
       <div class="remember-forgot">
@@ -60,6 +61,24 @@
       </div>
     </form>
   </div>
+
+<script>
+  let eye_icon = document.getElementById("eyeicon");
+  let password = document.getElementById("password");
+
+  eye_icon.onclick = function () {
+    if (password.type === "password") {
+      password.type = "text";
+      eye_icon.src = "images/eye-open.png";
+    } else {
+      password.type = "password";
+      eye_icon.src = "images/eye-close.png";
+    }
+  }
+
+
+</script>
+
 </body>
 
 </html>

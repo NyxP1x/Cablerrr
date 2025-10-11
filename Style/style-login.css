@@ -99,6 +99,34 @@ body {
   font-size: 1.25rem;
 }
 
+.input-box i {
+  right: 45px;
+}
+
+.input-box img {
+  right: 10px; 
+}
+
+
+.input-box img {
+  position: absolute;
+  right: 15px;            
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 20px;
+  cursor: pointer;
+  filter: brightness(0) invert(1); 
+  opacity: 0.9;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.input-box img:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+
 /* ========================================
    6. Remember Me / Forgot Password
 ======================================== */

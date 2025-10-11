@@ -1,5 +1,11 @@
+/* ========================================
+   1. Import Fonts
+======================================== */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Luxurious+Roman&display=swap");
 
+/* ========================================
+   2. Global Styles
+======================================== */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +20,10 @@ body {
   box-sizing: border-box;
 }
 
-.color2{
+/* ========================================
+   3. Decorative Circles
+======================================== */
+.color2 {
   position: absolute;
   top: 0;
   left: 10px;
@@ -25,11 +34,13 @@ body {
   bottom: 91px;
   left: 20px;
 }
+
 .circle2 {
   position: absolute;
   top: 0%;
   right: 0%;
 }
+
 .circle3 {
   position: absolute;
   top: 100px;
@@ -42,6 +53,9 @@ body {
   right: 0%;
 }
 
+/* ========================================
+   4. Box Section
+======================================== */
 .box {
   min-height: 80vh;
   width: 100%;
@@ -53,6 +67,9 @@ body {
   justify-content: center;
 }
 
+/* ========================================
+   5. Navbar
+======================================== */
 .navbar {
   margin-top: 10px;
   width: 100%;
@@ -139,6 +156,9 @@ body {
   margin-right: 40px;
 }
 
+/* ========================================
+   6. Hero Section
+======================================== */
 .hero-content {
   position: absolute;
   top: 50%;
@@ -186,6 +206,9 @@ body {
   color: #000;
 }
 
+/* ========================================
+   7. Hamburger & Mobile Menu
+======================================== */
 .hamburger {
   display: none;
   width: 30px;
@@ -205,52 +228,108 @@ body {
 
 .mobile-menu {
   display: none;
-  width: 50%;
+  width: 50vw;
   height: 1000px;
   flex-direction: column;
   align-items: center;
   color: #fff;
-  border: 2px solid rgb(255, 255, 255 rgba(255, 255, 255, 0.2));
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   padding: 10px 0;
-  transition: max-height 0.3s ease-out;
-  overflow: hidden;
   position: absolute;
-  left: 230px;
+  right: 0;
   top: 55px;
   transform: translateX(50px);
-  animation: fadeInRight 0.8s ease forwards;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(20px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+  transition: none;
+  opacity: 0;
+}
+
+.mobile-menu.open {
+  display: flex;
+  animation: fadeInRight 0.6s ease forwards;
+}
+
+.mobile-menu.closing {
+  animation: fadeOutRight 0.6s ease forwards;
 }
 
 @keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-.mobile-menu.open {
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+}
+
+/* ========================================
+   8. Profile, Community, Subscription, Settings, Help, Sign Out Links
+======================================== */
+.Product_Catalog,
+.About_Us,
+.Payment_Methods,
+.Contacts,
+.Register,
+.Login {
   display: flex;
-}
-
-.mobile-links a,
-.mobile-buttons a {
-  color: white;
+  align-items: center;
+  gap: 10px;
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  margin: 8px 0;
-  display: block;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+.Login:hover,
+.Contacts:hover,
+.Product_Catalog:hover,
+.Payment_Methods:hover,
+.About_Us:hover,
+.Register:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+/* ========================================
+   9. Box Mobile
+======================================== */
+.box-mobile {
+  padding: 20px;
+  border-radius: 1.5rem;
+}
+
+.box-mobile:hover {
+  background-color: rgba(0, 0, 0, 0.144);
+}
+
+/* ========================================
+   10. Responsive Styles (Media Queries)
+======================================== */
 @media (max-width: 48rem) {
   .logo {
     position: absolute;
     top: 1vh;
     left: 0;
   }
+
   .nav-links,
   .nav-buttons {
     display: none;
@@ -292,6 +371,7 @@ body {
     background-position: center;
     overflow: hidden;
   }
+
   .color2,
   .circle1,
   .circle2,
@@ -303,4 +383,24 @@ body {
   .box {
     display: none;
   }
+
+  .btn {
+ padding: 10px 25px;
+ white-space: nowrap;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-outline {
+  background-color: white;
+  border: 2px solid #ffffff;
+  color: #000;
+}
+
+.hero-content{
+  width: 400px;
+}
 }

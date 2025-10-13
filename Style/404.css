@@ -1,8 +1,11 @@
+/* ========================================
+   1. Import Fonts
+======================================== */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Luxurious+Roman&display=swap");
 
-
-
-
+/* ========================================
+   2. Global Styles
+======================================== */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -17,6 +20,9 @@ body {
   box-sizing: border-box;
 }
 
+/* ========================================
+   3. Not Found Page
+======================================== */
 #notfound {
   position: relative;
   height: 100vh;
@@ -26,12 +32,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.notfound {
+  transform: translate(-50%, -50%);
   max-width: 767px;
   width: 100%;
   line-height: 1.4;
@@ -50,20 +51,16 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50% , -50%);
-      -ms-transform: translate(-50% , -50%);
-          transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
   font-size: 224px;
   font-weight: 900;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0;
   margin-left: -12px;
   color: #030005;
   text-transform: uppercase;
   text-shadow: -1px -1px 0px #e2de80, 1px 1px 0px #ffb5d9;
   letter-spacing: -20px;
 }
-
 
 .notfound .notfound-404 h2 {
   font-family: 'Montserrat', sans-serif;
@@ -91,7 +88,6 @@ body {
   padding: 10px 40px;
   font-size: 14px;
   font-weight: 700;
-  -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 
@@ -99,7 +95,9 @@ body {
   color: #e2de80;
 }
 
-
+/* ========================================
+   4. Logo
+======================================== */
 .logo {
   position: absolute;
   left: 90px;
@@ -112,9 +110,7 @@ body {
   margin-left: 20px;
 }
 
-.logo-icon {
-  font-weight: bold;
-}
+.logo-icon { font-weight: bold; }
 
 .logo-text {
   font-size: 30px;
@@ -124,33 +120,29 @@ body {
   text-decoration: none;
 }
 
-
+/* ========================================
+   5. Responsive Styles
+======================================== */
 @media only screen and (max-width: 767px) {
-    .notfound .notfound-404 h2 {
-        font-size: 24px;
-    }
+  .notfound .notfound-404 h2 { font-size: 24px; }
 }
 
 @media only screen and (max-width: 480px) {
-  .notfound .notfound-404 h1 {
-      font-size: 182px;
-  }
+  .notfound .notfound-404 h1 { font-size: 182px; }
 }
 
 @media (max-width: 768px) {
-    body {
-  background: url(images/Login\ Background\ Mobile.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  box-sizing: border-box;
-}
+  body {
+    background: url(images/Login\ Background\ Mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+  }
 
- .logo {
+  .logo {
     position: absolute;
     top: 19px;
     left: 0;
   }
-
 }

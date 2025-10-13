@@ -116,11 +116,26 @@ body {
 /* ========================================
    6. Remember Me / Forgot Password
 ======================================== */
+.checkbox {
+  vertical-align: middle;
+  margin-right: 5px;      
+}
+
+
+.checkbox {
+  position: relative;
+  bottom: 2px; 
+  margin-right: 5px;
+}
+
+
 .remember-forgot {
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
   margin: 0.5rem 0;
+  position: relative;
+  bottom: 7px;
 }
 
 .remember-forgot label input {
@@ -181,30 +196,32 @@ body {
 
 /* ========================================
    9. Forgot Text
-======================================== */
-.forgot-txt {
+   ======================================== */   
+   .forgot-txt {
   margin: 1.25rem;
-}
+}  
+
+
 
 /* ========================================
    10. Terms of Service (TOS)
-======================================== */
+======================================== */   
 .wrapper .tos {
   display: flex;
   justify-content: space-between;
   font-size: 0.9063rem;
   margin: -0.9375rem 0 0.9375rem;
-}
+}  
 
 .tos label input {
   accent-color: #fff;
   margin-right: 0.1875rem;
-}
+}  
 
 .tos a {
   color: #fff;
   text-decoration: underline;
-}
+}  
 
 .terms-box {
   max-width: 28.75rem;
@@ -219,12 +236,12 @@ body {
   transform: translateY(20px);
   animation: fadeInUp 0.8s ease forwards;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
+}  
 
 .terms-box:hover {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.123);
   transform: scale(1.02);
-}
+}  
 
 .terms-content {
   padding: 0 1.25rem;
@@ -233,41 +250,41 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
   color: #f1f1f1;
-}
+}  
 
 .terms-content .audit,
 .terms-content .greetings {
   margin-bottom: 0.625rem;
-}
+}  
 
 .terms-content::-webkit-scrollbar {
   width: 0.25rem;
   background-color: #ffffff59;
-}
+}  
 
 .terms-content::-webkit-scrollbar-thumb {
   background-color: #ffffffce;
-}
+}  
 
 .terms-content h2 {
   text-transform: uppercase;
   margin-bottom: 0.625rem;
-}
+}  
 
 .terms-box h4 {
   font-size: 0.8125rem;
   text-align: center;
   padding: 0 2.5rem;
   margin: 2.5rem;
-}
+}  
 
 .terms-box h4 span {
   color: #ff0015;
-}
+}  
 
 /* ========================================
    11. Logo
-======================================== */
+======================================== */   
 .logo {
   position: absolute;
   left: 90px;
@@ -278,11 +295,11 @@ body {
   font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: 600;
   margin-left: 20px;
-}
+}  
 
 .logo-icon {
   font-weight: bold;
-}
+}  
 
 .logo-text {
   font-size: 30px;
@@ -290,7 +307,9 @@ body {
   color: white;
   font-family: Luxurious Roman;
   text-decoration: none;
-}
+}  
+
+
 
 /* ========================================
    12. Responsive Styles

@@ -50,6 +50,8 @@ Cablerrr/
 - **Custom Fonts**: Luxurious Roman and JetBrains Mono typography
 - **Icon Integration**: Boxicons for consistent iconography
 
+**Design Credits**: UI/UX design based on the free Figma template available at [Figma Community](https://www.figma.com/design/DSpoumgskjgf2EdJ7QruWP/FREE-%7C-Cablerrr---Online-Cable-Wholesale-Store--Community-?node-id=1906-584&p=f&t=ItwXeY7006h3HTGY-0)
+
 ## 🛠️ Technologies Used
 
 - **HTML5**: Semantic markup and accessibility

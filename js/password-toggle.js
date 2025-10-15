@@ -1,0 +1,17 @@
+// Password Toggle Functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const eyeIcon = document.getElementById("eyeicon");
+  const password = document.getElementById("password");
+
+  if (eyeIcon && password) {
+    eyeIcon.onclick = function () {
+      if (password.type === "password") {
+        password.type = "text";
+        eyeIcon.src = "../images/icons/eye-open.png";
+      } else {
+        password.type = "password";
+        eyeIcon.src = "../images/icons/eye-close.png";
+      }
+    };
+  }
+});

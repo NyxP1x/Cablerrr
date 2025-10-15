@@ -12,11 +12,12 @@
 }
 
 body {
-  background: url(images/Login\ Bckground.png);
+  background: url(../images/backgrounds/Login\ Bckground.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
+  touch-action: none;
   box-sizing: border-box;
 }
 
@@ -133,7 +134,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background: url(images/Login\ Background\ Mobile.png);
+    background: url(../images/backgrounds/Login\ Background\ Mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

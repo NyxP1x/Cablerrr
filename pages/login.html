@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../Style/style-login.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/png" href="../images/icons/log-inn.png">
+</head>
+
+<body>
+  <!-- Logo Section -->
+  <div class="logo">
+    <a href="../index.html" class="logo-icon">
+      <img src="../images/logos/logo.png" alt="logo">
+    </a>
+    <a href="../index.html" class="logo-text">ablerrr</a>
+  </div>
+
+  <!-- Login Wrapper -->
+  <div class="wrapper">
+    <form action="">
+      <!-- Heading -->
+      <h1>Login</h1>
+
+      <!-- Username Input -->
+    <div class="input-box">
+      <input type="text" id="username" required>
+      <label for="username">Username</label>
+      <i class='bx bxs-user' style='color:#ffffff'></i>
+    </div>
+
+      <!-- Password Input -->
+<div class="input-box">
+    <input type="password" id="password" required>
+    <label for="password">Password</label>
+    <i class='bx bxs-lock-alt' style='color:#ffffff'></i>
+  <img src="../images/icons/eye-close.png" id="eyeicon" alt="Toggle password visibility" style="cursor: pointer;">
+</div>
+
+      <!-- Remember Me and Forgot Password -->
+      <div class="remember-forgot">
+        <label>
+          <input type="checkbox" class="checkbox"> Remember Me
+        </label>
+        <a href="forgot-password.html">Forgot Password?</a>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn">Login</button>
+
+      <!-- Register Link -->
+      <div class="register-link">
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+      </div>
+    </form>
+  </div>
+
+  <!-- External Scripts -->
+  <script src="../js/password-toggle.js"></script>
+
+</body>
+
+</html>

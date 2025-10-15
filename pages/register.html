@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="../Style/style-login.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/png" href="../images/icons/Register.png">
+</head>
+
+<body>
+  <!-- Logo Section -->
+  <div class="logo">
+    <a href="../index.html" class="logo-icon">
+      <img src="../images/logos/logo.png" alt="logo">
+    </a>
+    <a href="../index.html" class="logo-text">ablerrr</a>
+  </div>
+
+  <!-- Registration Wrapper -->
+  <div class="wrapper">
+    <form action="">
+      <!-- Heading -->
+      <h1>Registration</h1>
+
+      <!-- Username Input -->
+      <div class="input-box">
+        <input type="text" id="username" required>
+        <label for="username">Username</label>
+        <i class='bx bxs-user' style='color:#ffffff'></i>
+      </div>
+      <!-- Email Input -->
+      <div class="input-box">
+        <input type="Mail" id="Mail" required>
+        <label for="Mail">Mail</label>
+        <i class='bx bxs-envelope' style='color:#ffffff'></i>
+      </div>
+
+      <!-- Password Input -->
+      <div class="input-box">
+        <input type="password" id="password" required>
+        <label for="password">Password</label>
+        <i class='bx bxs-lock-alt' style='color:#ffffff'></i>
+        <img src="../images/icons/eye-close.png" id="eyeicon" alt="Toggle password visibility" style="cursor: pointer;">
+      </div>
+
+      <!-- Terms of Service -->
+      <div class="tos">
+        <label>
+          <input type="checkbox" class="checkbox" required>
+          I agree to the <a href="terms-of-service.html">terms of service</a>
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn">Register</button>
+
+      <!-- Login Link -->
+      <div class="register-link">
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </form>
+  </div>
+
+  <!-- External Scripts -->
+  <script src="../js/password-toggle.js"></script>
+</body>
+</html>

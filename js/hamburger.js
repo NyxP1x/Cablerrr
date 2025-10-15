@@ -1,0 +1,37 @@
+// Hamburger Menu Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+  const closeBtn = document.getElementById('closeBtn');
+  function closeMenu() {
+    mobileMenu.classList.remove('open');
+    mobileMenu.classList.add('closing');
+    mobileMenuOverlay.classList.remove('active');
+    hamburger.classList.remove('active');
+
+    setTimeout(() => {
+      mobileMenu.classList.remove('closing');
+      mobileMenu.style.display = 'none';
+    }, 400);
+  }
+  
+  function openMenu() {
+    mobileMenu.style.display = 'flex';
+    mobileMenu.classList.add('open');
+    mobileMenuOverlay.classList.add('active');
+    hamburger.classList.add('active');
+  }
+
+  function toggleMenu() {
+    if (mobileMenu.classList.contains('open')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  }
+
+  hamburger.addEventListener('click', toggleMenu);
+  closeBtn.addEventListener('click', closeMenu);
+  mobileMenuOverlay.addEventListener('click', closeMenu);
+});

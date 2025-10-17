@@ -159,7 +159,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions or support, please visit:
 - Website: [cablerrr.vercel.app](https://cablerrr.vercel.app/)
 - GitHub: [github.com/NyxP1x](https://github.com/NyxP1x)
-- Deployed on: Vercel.
+- Deployed on: Vercel
 
 ---
 

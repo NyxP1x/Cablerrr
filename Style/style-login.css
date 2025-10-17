@@ -68,8 +68,9 @@ body {
   position: relative;
   width: 100%;
   height: 50px;
-  margin: 1.5rem 0;
+  margin: 2rem 0 2.5rem 0; 
 }
+
 
 
 .input-box input::placeholder {
@@ -266,13 +267,13 @@ body {
 
 /* ========================================
    10. Terms of Service (TOS)
-======================================== */   
+======================================== */
 .wrapper .tos {
   display: flex;
   justify-content: space-between;
   font-size: 0.9063rem;
-  margin: -0.9375rem 0 0.9375rem;
-}  
+  margin: 2rem 0 0.9375rem;
+}
 
 .tos label input {
   accent-color: #fff;

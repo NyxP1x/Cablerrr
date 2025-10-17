@@ -28,7 +28,8 @@ Cablerrr/
 │   └── logos/                 # Logo files
 ├── js/                        # JavaScript files
 │   ├── hamburger.js           # Mobile menu functionality
-│   └── password-toggle.js     # Password visibility toggle
+│   ├── password-toggle.js     # Password visibility toggle
+│   └── validation.js          # Form validation with real-time error clearing
 ├── pages/                     # Sub-pages
 │   ├── login.html             # User login page
 │   ├── register.html          # User registration page
@@ -38,6 +39,7 @@ Cablerrr/
 └── Style/                     # CSS stylesheets
     ├── Styles.css             # Main page styles
     ├── style-login.css        # Authentication pages styles
+    ├── error-styles.css       # Form validation error styles
     └── 404.css                # Error page styles
 ```
 
@@ -106,7 +108,10 @@ Cablerrr/
 - Floating labels that animate on input focus
 - Password visibility toggle with eye icons
 - Transparent autofill backgrounds (cross-browser)
-- Form validation and accessibility
+- Custom form validation with real-time error clearing
+- Browser popup suppression using `novalidate` attribute
+- Dynamic spacing adjustments when validation errors appear
+- Terms of service checkbox validation
 
 ### Responsive Design
 - Breakpoints for mobile (≤768px), tablet (769-1024px), and desktop

@@ -84,10 +84,14 @@ body {
   margin-bottom: 5px;
 }
 
+.nav-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
 .nav-links {
   display: flex;
-  position: relative;
-  left: 300px;
   gap: 30px;
 }
 

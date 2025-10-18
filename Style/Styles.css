@@ -18,6 +18,7 @@ body {
   padding: 20px;
   overflow: hidden;
   height: 100%;
+  min-height: 100vh;
   touch-action: none;
 }
 
@@ -144,6 +145,8 @@ body {
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 16px;
+  min-height: 1.2em;
+  line-height: 1.2;
 }
 
 .hero-content p {

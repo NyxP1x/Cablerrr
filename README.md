@@ -7,10 +7,12 @@ A modern, responsive website for wholesale sales of cables and accessories. Buil
 ## 🚀 Features
 
 - **Responsive Design**: Fully responsive layout that works on desktop, tablet, and mobile devices
-- **Authentication System**: Complete login, registration, and password recovery pages
+- **Authentication System**: Complete login, registration (including final registration step), and password recovery pages
+- **Form Validation**: Client-side validation for user inputs with real-time feedback
 - **Mobile Navigation**: Hamburger menu with smooth animations for mobile users
 - **Modern UI/UX**: Glassmorphism design with backdrop blur effects and smooth transitions
 - **Password Visibility Toggle**: Interactive eye icon to show/hide passwords
+- **Error Handling**: Custom error styles and pages for better user experience
 - **Terms of Service**: Comprehensive legal documentation page
 - **404 Error Page**: Custom error page with navigation back to homepage
 - **Cross-browser Autofill Support**: Transparent autofill backgrounds for better UX
@@ -19,26 +21,32 @@ A modern, responsive website for wholesale sales of cables and accessories. Buil
 
 ```
 Cablerrr/
+├── .gitignore                 # Git ignore file
 ├── index.html                 # Main landing page
 ├── 404.html                   # Root 404 page
 ├── README.md                  # Project documentation
+├── vercel.json                # Vercel deployment configuration
+├── tsconfig.ts                # TypeScript configuration
 ├── images/                    # Image assets
 │   ├── backgrounds/           # Background images
 │   ├── icons/                 # UI icons
 │   └── logos/                 # Logo files
 ├── js/                        # JavaScript files
 │   ├── hamburger.js           # Mobile menu functionality
-│   └── password-toggle.js     # Password visibility toggle
+│   ├── password-toggle.js     # Password visibility toggle
+│   └── validation.js          # Form validation functionality
 ├── pages/                     # Sub-pages
 │   ├── login.html             # User login page
 │   ├── register.html          # User registration page
+│   ├── register_final.html    # Final registration step page
 │   ├── forgot-password.html   # Password recovery page
 │   ├── terms-of-service.html  # Legal terms page
 │   └── 404.html               # Page not found error
 └── Style/                     # CSS stylesheets
     ├── Styles.css             # Main page styles
     ├── style-login.css        # Authentication pages styles
-    └── 404.css                # Error page styles
+    ├── 404.css                # Error page styles
+    └── error-styles.css       # Error handling styles
 ```
 
 ## 🎨 Design Features

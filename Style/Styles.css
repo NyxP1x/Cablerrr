@@ -309,7 +309,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-  background: url(../images/backgrounds/background-phone.png) center/cover no-repeat;
+  background: url(../images/backgrounds/background-phone.webp) center/cover no-repeat;
     overflow: hidden;
   }
 

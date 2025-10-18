@@ -25,8 +25,9 @@ Cablerrr/
 ├── index.html                 # Main landing page
 ├── 404.html                   # Root 404 page
 ├── README.md                  # Project documentation
+├── package.json               # Node.js dependencies (Sharp for image optimization)
+├── package-lock.json          # Lockfile for dependencies
 ├── vercel.json                # Vercel deployment configuration
-├── tsconfig.ts                # TypeScript configuration
 ├── images/                    # Image assets
 │   ├── backgrounds/           # Background images
 │   ├── icons/                 # UI icons
@@ -67,6 +68,8 @@ Cablerrr/
 - **JavaScript (ES6+)**: Interactive functionality and DOM manipulation
 - **Boxicons**: Icon library for UI elements
 - **Google Fonts**: Custom typography
+- **Sharp**: Image processing and optimization library (Node.js)
+- **Vercel**: Deployment platform with clean URLs configuration
 
 ## 📱 Pages Overview
 
@@ -101,6 +104,10 @@ Cablerrr/
    - Edit HTML files in the root and `pages/` directory
    - Modify styles in the `Style/` directory
    - Update JavaScript functionality in the `js/` directory
+
+4. **Image Optimization** (optional):
+   - Install dependencies: `npm install`
+   - Run the optimization script: `node optimize-image.js` (if available)
 
 ## 🎯 Key Features Explained
 

@@ -1,5 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "cleanUrls": true,
-  "functionFailoverRegions": ["iad1", "sfo1"]
+  "cleanUrls": true
 }
+

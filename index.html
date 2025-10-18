@@ -10,20 +10,22 @@
   <link rel="preload" href="Style/Styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="Style/Styles.css"></noscript>
   <link rel="icon" type="image/png" href="images/logos/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
   <!-- MAIN BOX -->
   <div class="box">
     <!-- Decorative Image -->
-    <img src="images/backgrounds/circle2 color.png" class="color2">
+    <img src="images/backgrounds/circle2 color.png" class="color2" fetchpriority="high" decoding="async" alt="Decorative background circle">
 
     <!-- Background Circles -->
     <div class="Circles">
-      <img src="images/backgrounds/circle.png" class="circle1" alt="circle1">
-      <img src="images/backgrounds/circle1.png" class="circle2" alt="circle2">
-      <img src="images/backgrounds/circle2.png" class="circle3" alt="circle3">
-      <img src="images/backgrounds/circle3.png" class="circle4" alt="circle4">
+      <img src="images/backgrounds/circle.png" class="circle1" alt="circle1" loading="lazy">
+      <img src="images/backgrounds/circle1.png" class="circle2" alt="circle2" loading="lazy">
+      <img src="images/backgrounds/circle2.png" class="circle3" alt="circle3" loading="lazy">
+      <img src="images/backgrounds/circle3.png" class="circle4" alt="circle4" loading="lazy">
     </div>
   </div>
   
@@ -145,7 +147,7 @@
     </div>
 
     <!-- External Scripts -->
-    <script src="js/hamburger.js"></script>
+    <script src="js/hamburger.js" defer></script>
 
   </header>
 </html>
